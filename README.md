@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Estudo de React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>Instalação do React</h3>
 
-## Available Scripts
+# npx create-react-app my-app
 
-In the project directory, you can run:
+<p>ou</p>
 
-### `yarn start`
+# npm init react-app my-app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>ou</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# yarn create react-app my-app
 
-### `yarn test`
+<h3>Iniciar o projeto</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>Dentro desse diretório, você pode executar vários comandos:</p>
 
-### `yarn build`
+<b>yarn start</b> - Inicia o servidor de desenvolvimento.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<b>yarn build</b> - Agrupa o aplicativo em arquivos estáticos para produção.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<b>yarn test</b> - Inicia o executor de teste.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<b>yarn eject</b> - Remove esta ferramenta e copia dependências de compilação, arquivos de configuração e scripts no diretório do aplicativo. Se você fizer isso, você não pode voltar!</p>
 
-### `yarn eject`
+<p>Dica: Instalar variável de ambiente do VS Code para abri-lo via terminal:</p>
+<p>Tecle ‘F1’ e digite code – Click sobre “Shell Command: Install ‘code’ command in PATH”.</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>Na pasta public temos os arquivos públicos, um deles é o index.html que apresenta a estrutura básica do HTML coma div app que renderiza o conteúdo enviado pelo script localizado em src/index.js. Este processo se chama componentização.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>Neste arquivo temos a importação de React e ReactDOM que é o responsável por enviar o elemento para renderizar na div app. O conteúdo de app está dentro de src/App.js.</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>JSX – HTML que se encontra dentro do JavaScript. A diferença do HTML convencional, é que podemos inserir javascript e componentes nele de uma forma mais facilmente.</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>Ao inserir um elemento a qual receberá formatação CSS por classe, devemos alterar class para className, pois dentro do react class é uma palavra reservada.</p>
 
-## Learn More
+<p>Todos os elementos do react são componentes inclusive o App.js. Todo componente tem um estado interno que vai definir os estados e as vaiáveis e vai receber propriedades.</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>Os atributos das tags HTML dentro do react passam a ser propriedades.</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>Todo componente React (função) tem por padrão o parâmetro props, que pode-se passar propriedades de um componente para outro. Quando vamos inserir esta propriedade dentro do JSX devemos coloca-lo entre colchetes “{}”.</p>
 
-### Code Splitting
+<p>Fragment – Como o JSX não pode ser passado com vários elementos costuma-se colocar o conteúdo em uma <code><div></div></code> porém e pode em alguns cados quebras a estilização então utiliza-se fragment <code><> </></code>. Assim o elemento container não é renderizado. Ficando apenas o conteúdo que ele possui.</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>UserState – Implementa rookies para citar estados e modificar estados dos componentes.</p>
+<p>Ele retorna um array com duas posições, vai retornar um elemento e uma função ex: [usuario, setUsuario].</p>
+<p>Podendo utilizar neste caso a desestruturação.</p>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p style="color: red;">Pesquisar

@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
 
-function App() {
+function App(props) {
+  const [ user, setUser ] = useState('Rodrigo')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    /* Utilização de fragment. Para conter vários elementos */
+    /* para serem renderizados. */
+    <>
+      <p>{ user }</p>
+      {/* Utiliza as propriedades vindas com parâmetro de index.js. */}
+      <h1>{props.title} {props.user}</h1>
+      <input type="text" name="user" className="userInput" id="user" placeholder="Usuário"/>
+      <button type='button'>Pesquisar</button>
+    </>
   );
 }
 
