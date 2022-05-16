@@ -41,11 +41,11 @@
 
 <p>Todo componente React (função) tem por padrão o parâmetro props, que pode-se passar propriedades de um componente para outro. Quando vamos inserir esta propriedade dentro do JSX devemos coloca-lo entre colchetes “{}”.</p>
 
-<p>Fragment – Como o JSX não pode ser passado com vários elementos costuma-se colocar o conteúdo em uma <pre><!-- <div></div> --></pre> porém e pode em alguns cados quebras a estilização então utiliza-se fragment <pre><!-- <> </> --></pre>. Assim o elemento container não é renderizado. Ficando apenas o conteúdo que ele possui.</p>
+<p>Fragment – Como o JSX não pode ser passado com vários elementos costuma-se colocar o conteúdo em uma ``` <div></div> ``` porém e pode em alguns cados quebras a estilização então utiliza-se fragment ``` <> </> ```. Assim o elemento container não é renderizado. Ficando apenas o conteúdo que ele possui.</p>
 
 <p>UserState – Implementa rookies para citar estados e modificar estados dos componentes.</p>
 <p>Ele retorna um array com duas posições, vai retornar um elemento e uma função ex: [usuario, setUsuario].</p>
 <p>Podendo utilizar neste caso a desestruturação.</p>
 
 
-<p style="color: red;">Pesquisar por <pre><!-- <React.StrictMode> --></pre></p>
+<p style="color: red;">Pesquisar por ``` <React.StrictMode> ```</p>
