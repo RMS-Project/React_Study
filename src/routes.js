@@ -1,18 +1,18 @@
 import React from 'react';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import Home from './Home';
 import Repositories from './Repositories';
 
 export default function RoutesAPP() {
+  /* Componente fundamental para criar as rotas no react-router-dom */
+  /* Possui todas as rotas da aplicação */
+  /* Rotas */
   return (
-    {/* Componente fundamental para criar as rotas no react-router-dom */},
     <BrowserRouter>
-      {/* Possui todas as rotas da aplicação */}
       <Routes>
-        {/* Rotas */}
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/repositories' component={Repositories}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/repositories' element={<Repositories/>}/>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
